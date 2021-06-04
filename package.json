@@ -4,7 +4,8 @@
   "private": true,
   "main": "dist/app.js",
   "scripts": {
-    "start": "set NODE_ENV=production&&set PORT=8080&&tsc&&node .",
+    "build": "tsc",
+    "start": "set NODE_ENV=production&&set PORT=8080&&node .",
     "dev": "set NODE_ENV=development&&set PORT=8080&&tsc-watch --onSuccess \"node .\""
   },
   "dependencies": {
