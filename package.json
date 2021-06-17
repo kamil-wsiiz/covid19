@@ -1,9 +1,9 @@
 {
   "name": "covid19",
-  "version": "0.0.1",
-  "private": true,
+  "version": "1.0.0",
   "main": "dist/app.js",
   "scripts": {
+    "test": "jest",
     "build": "tsc",
     "start": "set NODE_ENV=production&&set PORT=8080&&node .",
     "dev": "set NODE_ENV=development&&set PORT=8080&&tsc-watch --onSuccess \"node .\""
@@ -11,11 +11,15 @@
   "dependencies": {
     "@types/express": "^4.17.11",
     "@types/mongodb": "^3.6.17",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
+    "moment": "^2.29.1",
     "mongodb": "^3.6.9",
-    "mongoose": "^5.12.12"
+    "mongoose": "^5.12.12",
+    "node-cron": "^3.0.0"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.23",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.21.0",
     "eslint": "^7.23.0",
@@ -23,6 +27,8 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
+    "jest": "^27.0.4",
+    "ts-jest": "^27.0.3",
     "tsc-watch": "^4.2.9",
     "typescript": "^4.2.3"
   }

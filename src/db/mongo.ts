@@ -4,7 +4,8 @@ const mongoose = require('mongoose')
 
 const options = {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  ignoreUndefined: true
 }
 
 mongoose.connect(database.connectionString, options)
